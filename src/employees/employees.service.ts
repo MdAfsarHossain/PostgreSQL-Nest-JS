@@ -18,6 +18,7 @@ export class EmployeesService {
         return this.employeeRepository.find()
     }
 
+    // Find single employee
     async findOne(id: number): Promise<Employee> {
         const employee = await this.employeeRepository.findOneBy({ id })
         if (!employee) {
