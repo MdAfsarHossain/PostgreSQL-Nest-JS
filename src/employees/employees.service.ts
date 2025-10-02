@@ -13,6 +13,7 @@ export class EmployeesService {
         return this.employeeRepository.save(employee)
     }
 
+    // Get All Employees
     async findAll(): Promise<Employee[]> {
         return this.employeeRepository.find()
     }
