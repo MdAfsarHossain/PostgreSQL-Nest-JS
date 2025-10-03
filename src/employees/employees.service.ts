@@ -7,6 +7,7 @@ import { Repository } from 'typeorm';
 export class EmployeesService {
     constructor(@InjectRepository(Employee) private employeeRepository: Repository<Employee>) { }
 
+    // Create new employee
     async create(employeeData: Partial<Employee>): Promise<Employee> {
         const employee = this.employeeRepository.create(employeeData);
         return this.employeeRepository.save(employee)
