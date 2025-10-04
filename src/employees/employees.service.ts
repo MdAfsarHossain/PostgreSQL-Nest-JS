@@ -40,6 +40,7 @@ export class EmployeesService {
         return this.employeeRepository.save(updated)
     }
 
+    // Delete Employee
     async delete(id: number): Promise<{ message: string }> {
         const result = await this.employeeRepository.delete(id);
 
