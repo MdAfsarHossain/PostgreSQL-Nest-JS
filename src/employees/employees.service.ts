@@ -28,6 +28,7 @@ export class EmployeesService {
         return employee
     }
 
+    // Update Employee
     async update(id: number, updateData: Partial<Employee>): Promise<Employee> {
         const employee = await this.employeeRepository.findOneBy({ id });
 
