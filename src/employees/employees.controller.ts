@@ -18,6 +18,7 @@ import { EmployeesService } from './employees.service';
 export class EmployeesController {
   constructor(private readonly employeeService: EmployeesService) {}
 
+  // Create Employes Post
   @Post()
   async createEmployee(@Body() body: Partial<Employee>): Promise<Employee> {
     return this.employeeService.create(body);
