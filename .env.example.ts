@@ -1,1 +1,1 @@
-DATABASE_URL=postgresql://postgres.awgwctirexmdoembkjrt:Postgre-SQL-Nest-JS@aws-1-us-east-2.pooler.supabase.com:5432/postgres
+DATABASE_URL=
